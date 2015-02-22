@@ -1,6 +1,6 @@
 /*
-This is the program SquareRoot
-It is a program for calculating square roots in GF(p)
+This is the program modsqrt2
+It is a C program for calculating square roots in GF(p)
 if p is prime and p = 5 mod 6, or p = 4 mod 9, or p = 7 mod 9
 
 It is based on exponentiation in GF(p^3)
@@ -8,9 +8,9 @@ It calculates the function S(d,b,p) mentioned in the
 paper "On Calculating Square Roots in GF(p)"
 
 The algorithm exponentiates in GF(p^3) by calculating
-	x^p (mod x^3 + ax + b) where the integer a is chosen such that
-	d = -(4a^3 + 27b^2) (mod p) where d is the quadratic residue
-	whose square root is to be determined by the algorithm
+x^p (mod x^3 + ax + b) where the integer a is chosen such that
+d = -(4a^3 + 27b^2) (mod p) where d is the quadratic residue
+whose square root is to be determined by the algorithm
 
 If the polynomial x^3 + ax + b is not irreducible or if an appropriate
 value for a cannot be determined, the algorithm outputs 0.  Otherwise the
@@ -19,10 +19,6 @@ residue and assuming that 0 < b < p.
 
 Also a version of the Cipolla-Lehmer function presented for comparison.
 */
-
-
-/* This has been changed from sqr2a14.cpp in test directory */
-/* p-b has been changed to b */
 
 
 #include <stdio.h>
@@ -87,7 +83,7 @@ d1 = 12;
 c = 7;
 
 
-printf("\n \n This is the program modsqrt.c written by David S. Knight");
+printf("\n \n This is the program modsqrt2.c written by David S. Knight");
 
 
 printf("\n \n This program calculates the values of \n (1) S(d,b,p) ");
