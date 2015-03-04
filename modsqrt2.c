@@ -34,9 +34,9 @@ long int exp1 (long int e, long int g, long int n);
 void display2a (int d1, long int h1[]);
 void display2b (int d1, int t, long int h1[]);
 void addp (int d1, long int h1[], long int h2[], long int h3[],
-			  long int n);
+	   long int n);
 void subtp (int d1, long int h1[], long int h2[], long int h3[],
-			  long int n);
+	    long int n);
 void multc (int d1, long int c, long int h1[], long int h3[], long int n);
 void mult1 (int d1, long int h1[], long int h3[]);
 void equal (int d2, int d1, long int h1[], long int h3[]);
@@ -44,20 +44,20 @@ void equal2 (int d1, long int h1[], long int h3[]);
 void equal2a (int d1, long int h1[], long int h3[]);
 void setzero (int d1, long int h1[]);
 void multp (int d1, long int h1[], long int h2[], long int h4[],
-				long int n);
+	    long int n);
 void twodiv (int d1, long int h1[], int d2[], long int ans1[]);
 void divide (int d1, long int h1[], long int h2[], long int h5[],
-				 long int r[], long int n);
+	     long int r[], long int n);
 void multm (int d1, long int h1[], long int h2[], long int m[],
-				long int a0[], long int n);
+	    long int a0[], long int n);
 void exp2a (int d1, int c, long int e, long int h1[],
-				long int h2[],	long int m1[], long int p);
+	    long int h2[], long int m1[], long int p);
 long int sqr2a(int d1, int c, long int c1, long int b, long int e[],long int p);
 long int sqr2a1 (int d1, int c, long int c1, long int b, long int p);
 long int cl (int d1, int c, long int d, long int b, long int p);
 long int findncr (long int p);
 long int s2 (int d1, int c, long int c1, long int b, long int b2[],
-				 long int e1[], long int p);
+	     long int e1[], long int p);
 
 
 
@@ -315,7 +315,7 @@ for (i=0;i<d1;i++)
 }
 
 void subtp (int d1, long int h1[], long int h2[], long int h3[],
-			  long int n)
+	    long int n)
 
 
 {
@@ -416,7 +416,7 @@ for (i=0;i<d1;i++)
 
 
 void multp (int d1, long int h1[], long int h2[], long int h4[],
-				long int n)
+	    long int n)
 
 {
 int i;
@@ -471,7 +471,7 @@ ans1[1] = 0;
 
 
 void divide (int d1, long int h1[], long int h2[], long int h5[],
-				 long int r[], long int n)
+	     long int r[], long int n)
 
 {
 int i;
@@ -531,7 +531,7 @@ if (c1 > 197)
 
 
 void multm (int d1, long int h1[], long int h2[], long int m[],
-				long int a0[], long int n)
+	    long int a0[], long int n)
 
 {
 long int temp1[24];
@@ -553,10 +553,8 @@ equal(0,d1,temp3,a0);
 }
 
 
-
-
 void exp2a (int d1, int c, long int e, long int h1[], long int h2[],
-				long int m1[], long int p)
+	    long int m1[], long int p)
 
 {
 
@@ -590,7 +588,6 @@ equal(0,d1,t,h2);
 
 
 }
-
 
 
 long int sqr2a(int d1, int c, long int c1, long int b, long int e[], long int p)
@@ -804,7 +801,7 @@ return(t4);
 
 
 long int s2 (int d1, int c, long int c1, long int b, long int b2[],
-				 long int e1[], long int p)
+	     long int e1[], long int p)
 
 {
 long int t1,t2,t3,t4,t5,t6;
@@ -836,12 +833,12 @@ if ((p%6)==1)
 	t6 = (b*t1)%p;
 	t3 = sqr2a(d1,c,t5,t6,e,p);
 	if (t3!=0)
-			{
-			b2[0] = t6;
-			b2[1] = t1;
-			e1[0] = e[0];
-			e1[1] = e[1];
-			}
+		{
+		b2[0] = t6;
+		b2[1] = t1;
+		e1[0] = e[0];
+		e1[1] = e[1];
+		}
 
 	t5 = (t1*t5)%p;
 	t5 = (t1*t5)%p;
