@@ -176,7 +176,7 @@ if(c1!=-2)
 	printf(",%ld)",p);
 	printf(" = %ld",t1);
 
-    printf("\n \n");
+    	printf("\n \n");
 	printf("      the cubic polynomial modulus q(x) = x^3 + %ldx + %ld",e1[0],e1[1]);
 
 
