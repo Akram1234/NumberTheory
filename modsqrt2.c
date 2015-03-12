@@ -311,7 +311,6 @@ for (i=0;i<d1;i++)
 	{
 	h3[i] = (h1[i] + h2[i]) % n;
 	}
-
 }
 
 void subtp (int d1, long int h1[], long int h2[], long int h3[],
@@ -325,8 +324,6 @@ for (i=0;i<d1;i++)
 	{
 	h3[i] = (h1[i] + (n - h2[i])) % n;
 	}
-
-
 }
 
 void multc (int d1, long int c, long int h1[], long int h3[], long int n)
@@ -338,8 +335,6 @@ for (i=0;i<d1;i++)
 	{
 	h3[i] = (c*h1[i]) % n;
 	}
-
-
 }
 
 
@@ -353,8 +348,6 @@ for (i=0;i<(d1-1);i++)
 	h3[i] = (h1[i+1]);
 	}
 h3[d1-1] = 0;
-
-
 }
 
 
@@ -367,8 +360,6 @@ for (i=d2;i<d1;i++)
 	{
 	h3[i] = h1[i];
 	}
-
-
 }
 
 
@@ -382,8 +373,6 @@ for (i=0;i<d1;i++)
 	h3[i] = 0;
 	h3[d1+i] = h1[i];
 	}
-
-
 }
 
 
@@ -396,8 +385,6 @@ for (i=0;i<d1;i++)
 	{
 	h3[i] = h1[d1+i];
 	}
-
-
 }
 
 
@@ -410,10 +397,7 @@ for (i=0;i<d1;i++)
 	{
 	h1[i] = 0;
 	}
-
-
 }
-
 
 void multp (int d1, long int h1[], long int h2[], long int h4[],
 	    long int n)
@@ -447,8 +431,6 @@ equal(0,2*d1,total,h4);
 
 }
 
-
-
 void twodiv (int d1, long int h1[], int d2[], long int ans1[])
 
 {
@@ -465,10 +447,7 @@ for (i=0;i<d1;i++)
 	}
 ans1[1] = 0;
 
-
 }
-
-
 
 void divide (int d1, long int h1[], long int h2[], long int h5[],
 	     long int r[], long int n)
@@ -495,7 +474,6 @@ twodiv(d1,h2,d2,ans1);
 twodiv(2*d1,h1,d3,ans1);
 equal(0,2*d1,h1,temph1);
 
-
 while (((d2[0] < d3[0]) || (d2[0] == d3[0])) && (c1 < 200) && (d3[0] > 0))
 	{
 
@@ -517,7 +495,6 @@ while (((d2[0] < d3[0]) || (d2[0] == d3[0])) && (c1 < 200) && (d3[0] > 0))
 
 	twodiv(2*d1,temph1,d3,ans1);
 	c1 = c1 + 1;
-
 	}
 
 equal2a(d1,temph1,r);
@@ -525,7 +502,6 @@ if (c1 > 197)
 	{
 	printf("\n \n error in divide c1 = %d",c1);
 	}
-
 
 }
 
@@ -543,12 +519,8 @@ setzero(2*d1,temp2);
 setzero(d1,temp3);
 multp(d1,h1,h2,temp1,n);
 
-
 divide(d1,temp1,m,temp2,temp3,n);
-
 equal(0,d1,temp3,a0);
-
-
 
 }
 
@@ -586,7 +558,6 @@ while (e1 != 0)
 	}
 equal(0,d1,t,h2);
 
-
 }
 
 
@@ -621,7 +592,6 @@ if ((p%3)==1)
 		}
 	}
 
-
 setzero(d1,h10);
 h10[1+c] = 1;
 h10[2+c] = 0;
@@ -644,13 +614,10 @@ if (t2 != 0)
 	t1 = inverse(t2,p);
 	}
 
-
 t1 = (3*t1*t4)%p;
-
 return(t1);
 
 }
-
 
 
 long int sqr2a1 (int d1, int c, long int c1, long int b, long int p)
@@ -661,7 +628,6 @@ long int t1,t2,t3,t4,t5;
 long int h2[12] = {0};
 long int h3[12] = {0};
 long int h10[12] = {0};
-
 
 b2 = (b*b)%p;
 t1 = ((p%4)*p-1)/4;
@@ -684,7 +650,6 @@ if ((p%3)==1)
 		printf("\n \n      No solution for a can be determined thus output is 0");
 		}
 	}
-
 
 setzero(d1,h10);
 h10[1+c] = 1;
@@ -714,17 +679,10 @@ if (t2 != 0)
 	t1 = inverse(t2,p);
 	}
 
-
-
 t1 = (3*t1*t4)%p;
-
-
-
 return(t1);
 
 }
-
-
 
 
 long int cl (int d1, int c, long int d, long int b, long int p)
@@ -751,7 +709,6 @@ if ((t4!=1)&&(t4!=0))
 	b2 = 1;
 	}
 
-
 setzero(d1,h10);
 h10[2+c] = 1;
 h10[3+c] = p-b;
@@ -773,7 +730,6 @@ t1 = (t2*b2)%p;
 return(t1);
 
 }
-
 
 long int findncr (long int p)
 
@@ -797,7 +753,6 @@ for(k=2;k<51;k++)
 return(t4);
 
 }
-
 
 
 long int s2 (int d1, int c, long int c1, long int b, long int b2[],
