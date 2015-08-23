@@ -2,7 +2,7 @@
 modulo a prime.  This first is sqrt1(a,p) which calculates a value for
 x where x^2 = a (mod p) where p is a prime and where the variable a is a
 quadratic residue in GF(p).  The function sqrt1(a,p) is an implementation of
-the Cipolla-Lehmer algorithm.  The second square root function sqrt2(a,p) is
+the Cipolla-Lehmer algorithm.  The second square root function sqrt2(a,p) 
 is a different square root algorithm based on exponentiation in GF(p^3).
 sqrt1(a,p) is based primarily on the function CL(c,b,p) and sqrt2(a,p) is
 based primarily on the function S(d,b,p).
