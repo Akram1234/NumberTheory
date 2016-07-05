@@ -327,8 +327,7 @@ def multcnvl2(a,b,p):
     return(s)
 
 
-
-""" This multiplies two polynomials in modulo a cubic polynomial q(x)
+""" This multiplies two polynomials modulo a cubic polynomial q(x)
 that is it calculates c(x) = a(x)*b(x) <mod q(x)>
 where a(x) = a[0]x^2 + a[1]x + a[2] and b(x) = b[0]x^2 + b[1]x + b[2]
 and q(x) = x^3 + q[0]x^2 + q[1]x + q[2].
@@ -488,13 +487,12 @@ def S4(d,b,p):
         p = (p-t)%p
 
     return(t)
-        
-
+    
 
 """ This is the improved GF(p^3) square root algorithm and is based on the
 function S4(d,b,p). It calculates a square root of d mod p assuming d is a
 quadratic residue in GF(p).  It returns the same output as sqrt2
-if p = 5 (mod 6) or if p = 4 (mod 9) or p = 7 (mod 9).
+if p = 5 (mod 6) or if p = 4 (mod 9) or p = 7 (mod 9) where p is a prime.
 But unlike sqrt2, sqrt4 also works in all cases if p = 1 (mod 6)
 ((sqrt2 doesn't work if p = 1 (mod 9)).  Also sqrt4 improves the efficiency
 if p = 1 (mod 6) by avoiding having to calculate a cube root in GF(p)"""
