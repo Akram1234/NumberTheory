@@ -39,3 +39,7 @@ This determines the discriminant *d mod p* of the cubic polynomial *q(x) = x<sup
 **S3(q,p)**
 
 This function uses the *GF(p<sup>3</sup>)* square root algorithm to deterministically calculate the square root of *d mod p* where *d* is the discriminant of the cubic polynomial *q(x) = x<sup>3</sup> + q[0]x<sup>2</sup> + q[1]x + q[2]* in *O(log<sup>3</sup>p)* time where *p* is a prime such that *p = 5 mod 6*.
+
+**cubicreciprocity.py**
+
+This program can be used to verify the correctness of the cubic reciprocity identity in the paper "On Calculating Square Roots in *GF(p)*" which is listed as conjecture 7.
