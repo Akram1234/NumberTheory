@@ -38,8 +38,18 @@ This determines the discriminant *d mod p* of the cubic polynomial *q(x) = x<sup
 
 **S3(q,p)**
 
-This function uses the *GF(p<sup>3</sup>)* square root algorithm to deterministically calculate the square root of *d mod p* where *d* is the discriminant of the cubic polynomial *q(x) = x<sup>3</sup> + q[0]x<sup>2</sup> + q[1]x + q[2]* in *O(log<sup>3</sup>p)* time where *p* is a prime such that *p = 5 mod 6*.
+This function uses the *GF(p<sup>3</sup>)* square root algorithm to deterministically calculate the square root of *d mod p* where *d* is the discriminant of the cubic polynomial *q(x) = x<sup>3</sup> + q[0]x<sup>2</sup> + q[1]x + q[2]* in *O(log<sup>3</sup>p)* time for *p = 5 mod 6* where *p* is the prime modulus.
 
 **cubicreciprocity.py**
 
 This program can be used to verify the correctness of the cubic reciprocity identity in the paper "On Calculating Square Roots in *GF(p)*" which is listed as conjecture 7.
+
+**modsqrt21.py**
+
+This is the newest version of modsqrt.py and has the following added functions:
+
+(1) *verify(a,b,p)* This function can be used to verify the correctness of conjecture 4 in the paper "On Calculating Square Roots in *GF(p)*"
+
+(2) *sqrt2(d,p)* and *S(d,b,p)* have been improved to work in the cases *p = 4 mod 9* or *p = 7 mod 9* in addition to working in the case that *p = 5 mod 6* where *p* refers to the prime modulus.
+
+(3) *sqrt4(d,p)* and *S4(d,b,p)* have been added.  These are improved versions of *sqrt2(d,p)* and *S(d,b,p)* respectively and work in all cases for *p = 1 mod 6* as well as *p = 5 mod 6*.  Unlike *sqrt2(d,p)*, *sqrt4(d,p)* while calculating the modular square root of a quadratic residue *d mod p* avoids having to calculate cube roots which improves the efficiency if *p = 1 mod 6*.
