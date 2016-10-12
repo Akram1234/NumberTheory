@@ -484,7 +484,7 @@ def S4(d,b,p):
         t1 = s1[0][1]
         t = inverse(t1,p)
         t = (3*t)%p
-        p = (p-t)%p
+        t = (p-t)%p
 
     return(t)
     
