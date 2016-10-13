@@ -93,8 +93,7 @@ def CubicReciprocity(x,y,q):
         t = True
     return(t)
      
-            
-
+          
 # Example 1
 x = 1
 y = 5
@@ -123,8 +122,7 @@ if (t1==True):
     print("since (c1+c3) = c2 (mod 3)")
 else:
     print("Either conjecture 7 is false or the input was invalid.")
-          
-
+         
 
 # Example 3
 print("\n \n")
@@ -140,7 +138,6 @@ if (t2==True):
     print("since (c1+c3) = c2 (mod 3)")
 else:
     print("Either conjecture 7 is false or the input was invalid.")
-
 
 
 # Example 4
@@ -159,16 +156,10 @@ else:
     print("Either conjecture 7 is false or the input was invalid.")
 
 
-
 # Example 5
 print("\n \n")
 x = 1
 y = 8
-q = 67
-q = 43
-q = 37
-q = 199
-q = 79
 q = 67
 p = x**2+x*y+y**2
 print("\n \n      Example 5")
