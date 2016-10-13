@@ -112,7 +112,7 @@ else:
 # Example 2
 x = 1
 y = 5
-q = 53
+q = 43
 p = x**2+x*y+y**2
 print("\n \n      Example 2")
 t1 = CubicReciprocity(x,y,q)
