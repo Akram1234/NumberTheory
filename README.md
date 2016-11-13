@@ -42,7 +42,11 @@ This function uses the *GF(p<sup>3</sup>)* square root algorithm to deterministi
 
 **cubicreciprocity.py**
 
-This program can be used to verify the correctness of the cubic reciprocity identity in the paper "On Calculating Square Roots in *GF(p)*" which is listed as conjecture 7.
+This program can be used to verify the correctness of the cubic reciprocity identity in the paper "On Calculating Square Roots in *GF(p)*" which is listed as conjecture 7.  The main function is CubicReciprocity(x,y,q) which checks the correctness of a cubic reciprocity identity for two primes *p* and *q* where *p = x<sup>2</sup> + xy + y<sup>2</sup>* for positive integers *x* and *y* and where *q = 5 mod 6*.
+
+**cubicreciprocity2.py**
+
+This is an improved version of cubicreciprocity.py since the value of the prime *q* in the function CubicReciprocity(x,y,q) can be equal to *5 mod 6* as in cubicreciprocty.py but also generalizes to the case where *q = 1 mod 6*.
 
 **modsqrt21.py**
 
