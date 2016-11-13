@@ -46,7 +46,7 @@ This program can be used to verify the correctness of the cubic reciprocity iden
 
 **cubicreciprocity2.py**
 
-This is an improved version of cubicreciprocity.py since the value of the prime *q* in the function CubicReciprocity(x,y,q) can be equal to *5 mod 6* as in cubicreciprocty.py but also generalizes to the case where *q = 1 mod 6*.
+This is an improved version of cubicreciprocity.py since the value of the prime *q* in the function CubicReciprocity(x,y,q) can be equal to *5 mod 6* as in cubicreciprocity.py but also generalizes to the case where *q = 1 mod 6*.
 
 **modsqrt21.py**
 
