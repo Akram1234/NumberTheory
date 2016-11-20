@@ -57,3 +57,7 @@ This is the newest version of modsqrt.py and has the following added functions:
 (2) *sqrt2(d,p)* and *S(d,b,p)* have been improved to work in the cases *p = 4 mod 9* or *p = 7 mod 9* in addition to working in the case that *p = 5 mod 6* where *p* refers to the prime modulus.
 
 (3) *sqrt4(d,p)* and *S4(d,b,p)* have been added.  These are improved versions of *sqrt2(d,p)* and *S(d,b,p)* respectively and work in all cases for *p = 1 mod 6* as well as *p = 5 mod 6*.  Unlike *sqrt2(d,p)*, *sqrt4(d,p)* while calculating the modular square root of a quadratic residue *d mod p* avoids having to calculate cube roots which improves the efficiency if *p = 1 mod 6*.
+
+**SquareRoot03.tex**
+
+This is the tex file for the third version of the paper "On Calculating Square Roots in *GF(p)*".  Versions 1,2 and 3 of that paper are available at www.arxiv.org
