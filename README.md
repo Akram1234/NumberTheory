@@ -60,4 +60,4 @@ This is the newest version of modsqrt.py and has the following added functions:
 
 **SquareRoot03.tex**
 
-This is the TeX file for the third version of the paper "On Calculating Square Roots in *GF(p)*"  Versions 1,2 and 3 of that paper are available at www.arxiv.org
+This is the TeX file for the third version of the paper "On Calculating Square Roots in *GF(p)*"  Versions 1,2 and 3 of that paper are available at https://arxiv.org/abs/1309.2831
